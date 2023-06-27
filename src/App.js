@@ -22,7 +22,7 @@ function App() {
         <ToastContainer position='bottom-center' limit={1} />
       <main>
           <Routes>
-            <Route path="/" element={<HomeScreen />} />
+            <Route path="/Simple-project-frontend/" element={<HomeScreen />} />
             <Route path="/Introduction" element={<IntroductionScreen />} />
             <Route path="/ContactUs" element={<ContactUsScreen />} />
             <Route path="/categories/:categoryProduct" element={<CategoryScreen  />} />
