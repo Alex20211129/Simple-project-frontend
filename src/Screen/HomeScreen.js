@@ -16,19 +16,19 @@ const HomeScreen = () => {
                         altText: '',
                         caption: '',
                         key: 1,
-                        src: 'images/index_main01.jpg',
+                        src: 'Simple-project-frontend/images/index_main01.jpg',
                         },
                         {
                         altText: '',
                         caption: '',
                         key: 2,
-                        src: 'images/index_main02.jpg',
+                        src: 'Simple-project-frontend/images/index_main02.jpg',
                         },
                         {
                         altText: '',
                         caption: '',
                         key: 3,
-                        src: 'images/index_main04.jpg',
+                        src: 'Simple-project-frontend/images/index_main04.jpg',
                         }
                     ]}
                 />
