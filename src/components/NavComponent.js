@@ -36,8 +36,8 @@ export default function NavComponent(props) {
   return (
     <div className="px-2">
       <Navbar light expand="md">
-        <NavbarBrand tag={Link} to="/" className="mr-auto">
-        <img src="/images/logo.png" width="40" height="40" alt="logo"/>
+        <NavbarBrand tag={Link} to="/Simple-project-frontend" className="mr-auto">
+        <img src="Simple-project-frontend/images/logo.png" width="40" height="40" alt="logo"/>
           信大貿易
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
@@ -53,8 +53,8 @@ export default function NavComponent(props) {
                     產品目錄
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem ><NavLink tag={Link} to={`Categories/IndustrialLubricants`}>工業用潤滑油</NavLink></DropdownItem>
-                    <DropdownItem ><NavLink tag={Link} to={`Categories/AutomotiveLubricants`}>車用潤滑油</NavLink></DropdownItem>
+                    <DropdownItem ><NavLink tag={Link} to={`/Simple-project-frontend/Categories/IndustrialLubricants`}>工業用潤滑油</NavLink></DropdownItem>
+                    <DropdownItem ><NavLink tag={Link} to={`Simple-project-frontend/Categories/AutomotiveLubricants`}>車用潤滑油</NavLink></DropdownItem>
                     <DropdownItem ><NavLink tag={Link} to={`Categories/MarineLubrication`}>船舶用潤滑油</NavLink></DropdownItem>    
                     <DropdownItem ><NavLink tag={Link} to={`Categories/FoodMachineryOil`}>食品機械用潤滑油</NavLink></DropdownItem>    
                     {/* <DropdownItem ><NavLink tag={Link} to={`Categories/IndustrialLubricants`}>潛盾工程防水油脂</NavLink></DropdownItem>     */}

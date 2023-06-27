@@ -23,15 +23,15 @@ function App() {
       <main>
           <Routes>
             <Route path="/Simple-project-frontend" element={<HomeScreen />} />
-            <Route path="/Introduction" element={<IntroductionScreen />} />
-            <Route path="/ContactUs" element={<ContactUsScreen />} />
-            <Route path="/categories/:categoryProduct" element={<CategoryScreen  />} />
-            <Route path="/categories/:categoryProduct/:id" element={<ProductScreen />} />
-            <Route path="/login" element={<LoginScreen />} />
-            <Route path="/register" element={<RegisterScreen />} />
-            <Route path="/product/admin" element={<PostProductScreen />} />
-            <Route path="/product/admin/:id/edit" element={<EditProductScreen />} />
-            <Route path="/cart" element={<CartScreen />} />
+            <Route path="/Simple-project-frontend/Introduction" element={<IntroductionScreen />} />
+            <Route path="/Simple-project-frontend/ContactUs" element={<ContactUsScreen />} />
+            <Route path="/Simple-project-frontend/categories/:categoryProduct" element={<CategoryScreen  />} />
+            <Route path="/Simple-project-frontend/categories/:categoryProduct/:id" element={<ProductScreen />} />
+            <Route path="/Simple-project-frontend/login" element={<LoginScreen />} />
+            <Route path="/Simple-project-frontend/register" element={<RegisterScreen />} />
+            <Route path="/Simple-project-frontend/product/admin" element={<PostProductScreen />} />
+            <Route path="/Simple-project-frontend/product/admin/:id/edit" element={<EditProductScreen />} />
+            <Route path="/Simple-project-frontend/cart" element={<CartScreen />} />
           </Routes>
         </main>
         <footer>
