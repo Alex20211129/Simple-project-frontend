@@ -36,15 +36,15 @@ export default function NavComponent(props) {
   return (
     <div className="px-2">
       <Navbar light expand="md">
-        <NavbarBrand tag={Link} to="/Simple-project-frontend" className="mr-auto">
-        <img src="Simple-project-frontend/images/logo.png" width="40" height="40" alt="logo"/>
+        <NavbarBrand tag={Link} to="/Simple-project-frontend/" className="mr-auto">
+        <img src="./images/logo.png" width="40" height="40" alt="logo"/>
           信大貿易
         </NavbarBrand>
         <NavbarToggler onClick={toggleNavbar} className="mr-2" />
         <Collapse isOpen={!collapsed} navbar>
           <Nav navbar>
             <NavItem>
-              <NavLink tag={Link} to="/Introduction">
+              <NavLink tag={Link} to="/Simple-project-frontend/Introduction">
                 公司介紹
               </NavLink>
             </NavItem>
@@ -53,30 +53,30 @@ export default function NavComponent(props) {
                     產品目錄
                 </DropdownToggle>
                 <DropdownMenu>
-                    <DropdownItem ><NavLink tag={Link} to={`/Simple-project-frontend/Categories/IndustrialLubricants`}>工業用潤滑油</NavLink></DropdownItem>
+                    <DropdownItem ><NavLink tag={Link} to={`Simple-project-frontend/Categories/IndustrialLubricants`}>工業用潤滑油</NavLink></DropdownItem>
                     <DropdownItem ><NavLink tag={Link} to={`Simple-project-frontend/Categories/AutomotiveLubricants`}>車用潤滑油</NavLink></DropdownItem>
-                    <DropdownItem ><NavLink tag={Link} to={`Categories/MarineLubrication`}>船舶用潤滑油</NavLink></DropdownItem>    
-                    <DropdownItem ><NavLink tag={Link} to={`Categories/FoodMachineryOil`}>食品機械用潤滑油</NavLink></DropdownItem>    
+                    <DropdownItem ><NavLink tag={Link} to={`Simple-project-frontend/Categories/MarineLubrication`}>船舶用潤滑油</NavLink></DropdownItem>    
+                    <DropdownItem ><NavLink tag={Link} to={`Simple-project-frontend/Categories/FoodMachineryOil`}>食品機械用潤滑油</NavLink></DropdownItem>    
                     {/* <DropdownItem ><NavLink tag={Link} to={`Categories/IndustrialLubricants`}>潛盾工程防水油脂</NavLink></DropdownItem>     */}
-                    <DropdownItem ><NavLink tag={Link} to={`Categories/MetalProcessingOil`}>金屬加工用油</NavLink></DropdownItem>    
-                    <DropdownItem ><NavLink tag={Link} to={`Categories/Grease`}>潤滑油脂</NavLink></DropdownItem>    
+                    <DropdownItem ><NavLink tag={Link} to={`Simple-project-frontend/Categories/MetalProcessingOil`}>金屬加工用油</NavLink></DropdownItem>    
+                    <DropdownItem ><NavLink tag={Link} to={`Simple-project-frontend/Categories/Grease`}>潤滑油脂</NavLink></DropdownItem>    
                     {/* <DropdownItem ><NavLink tag={Link} to={`Categories/IndustrialLubricants`}>其他特殊品</NavLink></DropdownItem>     */}
                 </DropdownMenu>
             </Dropdown>
             <NavItem>
-              <NavLink tag={Link} to="ContactUs">
+              <NavLink tag={Link} to="/Simple-project-frontend/ContactUs">
                 與我聯繫
               </NavLink>
             </NavItem>
             {!userInfo ? (
               <Nav navbar>
                 <NavItem>
-                  <NavLink tag={Link} to="/login">
+                  <NavLink tag={Link} to="/Simple-project-frontend/login">
                     登錄
                   </NavLink>
                 </NavItem>
                 <NavItem>
-                  <NavLink tag={Link} to="/register">
+                  <NavLink tag={Link} to="/Simple-project-frontend/register">
                     註冊
                   </NavLink>
                 </NavItem>
@@ -88,7 +88,7 @@ export default function NavComponent(props) {
                   登出
                 </NavLink>
                 </NavItem>
-                <Link to="/cart" className='nav-link'>
+                <Link to="/Simple-project-frontend/cart" className='nav-link'>
                   詢價單
                   {cart.cartItems.length > 0 && (
                     <Badge pill bg="danger">
@@ -98,7 +98,7 @@ export default function NavComponent(props) {
             </Nav>)}
             {userInfo && userInfo.role === "Admin" && (
               <NavItem style={{marginRight: '10px'}}>
-                <NavLink tag={Link} to="/product/admin">
+                <NavLink tag={Link} to="/Simple-project-frontend/product/admin">
                   新增產品
                 </NavLink>
               </NavItem>  
