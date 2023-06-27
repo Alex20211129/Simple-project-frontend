@@ -3,37 +3,37 @@ const data = {
         {
             _id: '1',
             name: "工業用潤滑油",
-            image: "Simple-project-frontend/images/Industrial-Lubricants.png",
+            image: "/images/Industrial-Lubricants.png",
             url: "IndustrialLubricants"
         },
         {
             _id: '2',
             name: "車用齒輪油",
-            image: "Simple-project-frontend/images/Automotive-lubricants.jpg",
+            image: "/images/Automotive-lubricants.jpg",
             url: "AutomotiveLubricants"
         },
         {
             _id: '3',
             name: "船舶用潤滑油",
-            image: "Simple-project-frontend/images/Marine-Lubricant.jpg",
+            image: "/images/Marine-Lubricant.jpg",
             url: "MarineLubrication"
         },
         {
             _id: '4',
             name: "食品機械用油",
-            image: "Simple-project-frontend/images/Lubricant-for-Food-Machinery.jpg",
+            image: "/images/Lubricant-for-Food-Machinery.jpg",
             url: "FoodMachineryOil"
         },
         {
             _id: '5',
             name: "金屬加工油",
-            image: "Simple-project-frontend/images/Metal-processing-oil.png",
+            image: "/images/Metal-processing-oil.png",
             url: "MetalProcessingOil"
         },
         {
             _id: '6',
             name: "潤滑油脂",
-            image: "Simple-project-frontend/images/Grease.jpg",
+            image: "/images/Grease.jpg",
             url: "Grease"
         },
     
