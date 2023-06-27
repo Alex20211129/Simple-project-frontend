@@ -36,7 +36,7 @@ export default function NavComponent(props) {
   return (
     <div className="px-2">
       <Navbar light expand="md">
-        <NavbarBrand tag={Link} to="/Simple-project-frontend" className="mr-auto">
+        <NavbarBrand tag={Link} to="/" className="mr-auto">
         <img src="/images/logo.png" width="40" height="40" alt="logo"/>
           信大貿易
         </NavbarBrand>
