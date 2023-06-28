@@ -1,5 +1,5 @@
 import React, { useContext, useState } from 'react'
-import { Alert, Button, Form, FormGroup,  Input, Label } from 'reactstrap'
+import { Button, Form, FormGroup,  Input, Label } from 'reactstrap'
 import { CKEditor } from '@ckeditor/ckeditor5-react';
 import ClassicEditor from '@ckeditor/ckeditor5-build-classic';
 import axios from 'axios'
@@ -31,7 +31,7 @@ const PostProductScreen = () => {
         if (file) {
             imageURL = 'https://simple-demo.onrender.com/upload/' + file[0].name;
         } else {
-            imageURL = '.https://simple-demo.onrender.com/upload/noImage.jpg'
+            imageURL = 'https://simple-demo.onrender.com/upload/noImage.jpg'
         }
         try {
             const formData = new FormData();
@@ -48,7 +48,7 @@ const PostProductScreen = () => {
                 }
             })
             if (data) {
-                Alert("新墤產品成功");
+                toast.success("新墤產品成功");
                 navitation('/Simple-project-frontend/')
             }
         } catch (error) {
