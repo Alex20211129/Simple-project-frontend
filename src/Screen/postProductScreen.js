@@ -31,7 +31,7 @@ const PostProductScreen = () => {
         if (file) {
             imageURL = 'https://simple-demo.onrender.com/upload/' + file[0].name;
         } else {
-            imageURL = './images/noImage.jpg'
+            imageURL = '.https://simple-demo.onrender.com/upload/noImage.jpg'
         }
         try {
             const formData = new FormData();
