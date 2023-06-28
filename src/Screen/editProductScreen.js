@@ -23,7 +23,7 @@ const EditProductScreen = () => {
     let src = ''
     
     const goHomePage = () => {
-        navitation('/Simple-project-frontend');
+        navitation('/Simple-project-frontend/');
     }
 
     const sumitHandler = async(e) => {

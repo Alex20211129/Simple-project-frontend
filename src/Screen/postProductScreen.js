@@ -21,7 +21,7 @@ const PostProductScreen = () => {
         navitation('/Simple-project-frontend/login');
     }
     const goHomePage = () => {
-        navitation('/Simple-project-frontend');
+        navitation('/Simple-project-frontend/');
     }
 
     const submitHandler = async (e) => {
@@ -49,7 +49,7 @@ const PostProductScreen = () => {
             })
             if (data) {
                 Alert("新墤產品成功");
-                navitation('/Simple-project-frontend')
+                navitation('/Simple-project-frontend/')
             }
         } catch (error) {
             if(error.response.data === "Unauthorized"){

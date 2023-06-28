@@ -26,7 +26,7 @@ const LoginScreen = () => {
             localStorage.setItem('userInfo', JSON.stringify(data.user))
             localStorage.setItem('Token', JSON.stringify(data.token))
             toast.success("登入成功");
-            navigate( '/Simple-project-frontend');
+            navigate( '/Simple-project-frontend/');
         } catch (err) {
             toast.error(getError(err));
         }
@@ -34,7 +34,7 @@ const LoginScreen = () => {
 
     useEffect(() => {
         if (userInfo) {
-            navigate('/Simple-project-frontend')
+            navigate('/Simple-project-frontend/')
         }
     }, [navigate, userInfo])
     

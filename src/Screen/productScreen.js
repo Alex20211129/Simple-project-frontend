@@ -16,7 +16,7 @@ const ProductScreen = (props) => {
     useEffect(() => {
         if (id.length < 24) {
             toast.error("產品不存在，或產品ID不正確");
-            return navitation("/Simple-project-frontend")
+            return navitation("/Simple-project-frontend/")
         }
         const fetchCategoryProduct = async () => {
             try {
@@ -24,7 +24,7 @@ const ProductScreen = (props) => {
                 setProduct(data)
             } catch (error) {
                 toast.error(getError(error));
-                navitation("/Simple-project-frontend")
+                navitation("/Simple-project-frontend/")
             }
         }
         fetchCategoryProduct()
@@ -41,7 +41,7 @@ const ProductScreen = (props) => {
             </Helmet>
             <Breadcrumb>
                 <BreadcrumbItem>
-                    <Link to="/Simple-project-frontend">
+                    <Link to="/Simple-project-frontend/">
                     回首頁
                     </Link>
                 </BreadcrumbItem>

@@ -27,7 +27,7 @@ const RegisterScreen = () => {
             localStorage.setItem('userInfo', JSON.stringify(data.user))
             localStorage.setItem('Token', JSON.stringify(data.token))
             if (data) { toast.success("註冊成功，現在返回首頁"); }
-            navigate('/Simple-project-frontend');
+            navigate('/Simple-project-frontend/');
         } catch (err) {
             toast.error(getError(err));
         }
@@ -35,7 +35,7 @@ const RegisterScreen = () => {
 
     useEffect(() => {
         if (userInfo) {
-            navigate('/Simple-project-frontend')
+            navigate('/Simple-project-frontend/')
         }
     }, [navigate, userInfo])
     

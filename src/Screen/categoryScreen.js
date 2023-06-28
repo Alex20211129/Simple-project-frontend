@@ -64,7 +64,7 @@ const CategoryScreen = () => {
       Authorization: token,}
     }).then(res => {
       toast.success(`已經刪除`);
-      setTimeout(navitation(`/Simple-project-frontend`),1000)
+      setTimeout(navitation(`/Simple-project-frontend/`),1000)
     }).catch((error) => {
       if(error.response.data === "Unauthorized"){
         toast.error("無操作此功能的權限")
