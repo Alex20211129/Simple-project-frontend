@@ -56,7 +56,7 @@ const CategoryScreen = () => {
   
   //"修改"按鈕
   const goEditHandler = (id) => {
-    navitation(`/product/admin/${id}/edit`)
+    navitation(`/Simple-project-frontend/product/admin/${id}/edit`)
   }
   //"刪除"按鈕
   const goDeleteHandler = async(id) => {
@@ -64,7 +64,7 @@ const CategoryScreen = () => {
       Authorization: token,}
     }).then(res => {
       toast.success(`已經刪除`);
-      setTimeout(navitation(`/`),1000)
+      setTimeout(navitation(`/Simple-project-frontend`),1000)
     }).catch((error) => {
       if(error.response.data === "Unauthorized"){
         toast.error("無操作此功能的權限")
@@ -111,7 +111,7 @@ const CategoryScreen = () => {
               {products.map((item) => (
                 <Col key={item._id} sm={6} md={4} lg={3} className='mb-3'>
                   <Card style={{ width: '13rem' }}>
-                    <Link to={`/categories/${categoryProduct}/${item._id}`}>
+                    <Link to={`/Simple-project-frontend/categories/${categoryProduct}/${item._id}`}>
                       <img
                         className='productImg'
                         alt="Card"
@@ -120,7 +120,7 @@ const CategoryScreen = () => {
                     </Link>
                     <CardBody>
                       <CardTitle tag="h5">
-                        <Link to={`/categories/${categoryProduct}/${item._id}`}>
+                        <Link to={`/Simple-project-frontend/categories/${categoryProduct}/${item._id}`}>
                           <strong>{item.name}</strong>
                         </Link>
                       </CardTitle>

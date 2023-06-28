@@ -23,7 +23,7 @@ const EditProductScreen = () => {
     let src = ''
     
     const goHomePage = () => {
-        navitation('/');
+        navitation('/Simple-project-frontend');
     }
 
     const sumitHandler = async(e) => {
@@ -62,7 +62,7 @@ const EditProductScreen = () => {
                     progress: undefined,
                     theme: "light",
                 });
-                navitation(`/categories/${ToEnglishName(editCatrgory)}`)
+                navitation(`/Simple-project-frontend/categories/${ToEnglishName(editCatrgory)}`)
             }
         } catch (error) {
             if(error.response.data === "Unauthorized"){
@@ -78,7 +78,7 @@ const EditProductScreen = () => {
                     progress: undefined,
                     theme: "light",
                 });
-                navitation(`/categories/${ToEnglishName(editCatrgory)}`)
+                navitation(`/Simple-project-frontend/categories/${ToEnglishName(editCatrgory)}`)
             }
         }
 

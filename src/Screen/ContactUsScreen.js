@@ -29,7 +29,7 @@ const ContactUsScreen = () => {
             }
         } catch (error) {
             console.log(error);
-            navigation("/")
+            navigation("/Simple-project-frontend")
         }
     }
     return (

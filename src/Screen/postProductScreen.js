@@ -18,10 +18,10 @@ const PostProductScreen = () => {
     const [file, setFile] = useState("");
     const token = JSON.parse(localStorage.getItem('Token')) || null
     const handelTakeToLogin = () => {
-        navitation('/login');
+        navitation('/Simple-project-frontend/login');
     }
     const goHomePage = () => {
-        navitation('/');
+        navitation('/Simple-project-frontend');
     }
 
     const submitHandler = async (e) => {
@@ -49,7 +49,7 @@ const PostProductScreen = () => {
             })
             if (data) {
                 Alert("新墤產品成功");
-                navitation('/')
+                navitation('/Simple-project-frontend')
             }
         } catch (error) {
             if(error.response.data === "Unauthorized"){

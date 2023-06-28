@@ -4,7 +4,7 @@ import { Helmet } from 'react-helmet-async';
 import axios from 'axios';
 import { toast } from "react-toastify";
 import { getError } from "../utils";
-import { useLocation, useNavigate } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import { Store } from '../components/store';
 
 const RegisterScreen = () => {
@@ -12,9 +12,6 @@ const RegisterScreen = () => {
     const emailRef = useRef();
     const passwordRef = useRef();
     const navigate = useNavigate();
-    const { search } = useLocation()
-    const redirectUrl = new URLSearchParams(search).get('redirect')
-    const redirect = redirectUrl ? redirectUrl : '/'
 
     const { state, dispatch: ctxDispatch } = useContext(Store);
     const { userInfo } = state;
@@ -30,7 +27,7 @@ const RegisterScreen = () => {
             localStorage.setItem('userInfo', JSON.stringify(data.user))
             localStorage.setItem('Token', JSON.stringify(data.token))
             if (data) { toast.success("註冊成功，現在返回首頁"); }
-            navigate('/');
+            navigate('/Simple-project-frontend');
         } catch (err) {
             toast.error(getError(err));
         }
@@ -38,9 +35,9 @@ const RegisterScreen = () => {
 
     useEffect(() => {
         if (userInfo) {
-            navigate(redirect)
+            navigate('/Simple-project-frontend')
         }
-    }, [navigate, redirect, userInfo])
+    }, [navigate, userInfo])
     
     return (
         <Container className="small-container">

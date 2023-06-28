@@ -43,7 +43,7 @@ const CartScreen = () => {
                     type: 'CART_CLEAR',
                 });
                 localStorage.setItem('cartItems', [])
-                navigation('/')
+                navigation('/Simple-project-frontend')
             } else {
                 const submitItem = { name: cartItems[0].name, quantity: cartItems[0].quantity }
                 toast.info(<div>
@@ -57,7 +57,7 @@ const CartScreen = () => {
                     type: 'CART_CLEAR',
                 });
                 localStorage.setItem('cartItems', [])
-                navigation('/')
+                navigation('/Simple-project-frontend')
             }
         }
     }
@@ -74,7 +74,7 @@ const CartScreen = () => {
                     <Col md={8}>
                         {cartItems.length === 0 ? (
                             <MessageBox>
-                                無任何商品 <Link to="/">返回</Link>
+                                無任何商品 <Link to="/Simple-project-frontend">返回</Link>
                             </MessageBox>
                         ) : (
                                 <ListGroup>
@@ -89,7 +89,7 @@ const CartScreen = () => {
                                                     ></img>{' '}
                                                 </Col>
                                                 <Col md={8}>
-                                                    <h2><Link to={`/categories/${item.category}/${item._id}`}>{item.name}</Link></h2>
+                                                    <h2><Link to={`/Simple-project-frontend/categories/${item.category}/${item._id}`}>{item.name}</Link></h2>
                                                     <h3>{item.chname}</h3>
                                                 </Col>
                                                 <Col md={2}>
