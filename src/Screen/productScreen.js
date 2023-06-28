@@ -41,12 +41,12 @@ const ProductScreen = (props) => {
             </Helmet>
             <Breadcrumb>
                 <BreadcrumbItem>
-                    <Link to="/">
+                    <Link to="/Simple-project-frontend">
                     回首頁
                     </Link>
                 </BreadcrumbItem>
                 <BreadcrumbItem>
-                    <Link to={`/categories/${product.category}`}>
+                    <Link to={`/Simple-project-frontend/categories/${product.category}`}>
                     目錄
                     </Link>
                 </BreadcrumbItem>
